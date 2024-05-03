@@ -13,3 +13,6 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the span of the parallel program, in terms of worst-case $\Theta$? Hint:
 It may help to consider the DAG of the parallel program.
+
+## Answer
+Since this fits the form of divide and conquer, the longest path on the DAG contains $2n+1$ nodes, so the span is $T_{\inf}(n) \in \Theta(\log (n))$.
