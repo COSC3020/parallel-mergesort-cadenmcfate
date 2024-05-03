@@ -1,7 +1,6 @@
 //source for info on async with jsverify -> https://jsverify.github.io/
 const fs = require('fs');
 const jsc = require('jsverify');
-const { _ } = require('parallel/lib/opts');
 
 eval(fs.readFileSync('code.js')+'');
 
