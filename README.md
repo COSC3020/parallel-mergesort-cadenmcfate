@@ -15,4 +15,4 @@ What is the span of the parallel program, in terms of worst-case $\Theta$? Hint:
 It may help to consider the DAG of the parallel program.
 
 ## Answer
-Since this fits the form of divide and conquer, the longest path on the DAG contains $2n+1$ nodes, so the span is $T_{\infty}(n) \in \Theta(\log n)$.
+We have a typical depth of $\log n$ for the divide and conquer aspect, and then a factor of $n$ for the merging aspect. Hence the span is $\Theta(n\log n)$. This is asymptotically the same as regular mergesort because the advantage of parallelization doesn't revolve around somehow doing less work to accomplish the same task. We are doing the same amount of work, just spread across multiple threads, thus decreasing the runtime in practice. 
